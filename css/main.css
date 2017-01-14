@@ -1,0 +1,142 @@
+/* ------------------------------------------
+  CSS RESET
+--------------------------------------------- */
+
+body, div,
+h1, h2, h3, h4, h5, h6,
+p, blockquote, pre, dl, dt, dd, ol, ul, li, hr,
+fieldset, form, label, legend, th, td,
+article, aside, figure, footer, header, hgroup, menu, nav, section,
+summary, hgroup {
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
+a:active,
+a:hover {
+  outline: 0;
+}
+
+/* ------------------------------------------
+    NAVBAR STYLES
+--------------------------------------------- */
+#custom-navbar.navbar {
+  border: 0px;
+  border-radius: 0
+}
+#custom-navbar.navbar-default .navbar-brand {
+    color: #ffffff;
+    padding: 10px;
+    height: auto;
+}
+#custom-navbar.navbar-default .navbar-nav {
+    display: inline-block;
+    text-align: center;
+    float: none;
+}
+#custom-navbar.navbar-default {
+    font-size: 115%;
+    background-color: #004990;
+}
+#custom-navbar.navbar-default .navbar-nav>li>a {
+    color: #ffffff;
+    background-color: #004990;
+}
+#custom-navbar.navbar-default .navbar-nav>li>a:hover {
+    background-color: #0381FB;
+}
+#custom-navbar.navbar-default .navbar-collapse {
+  text-align: center;
+}
+#custom-navbar.navbar-default .navbar-toggle{
+   position: absolute;
+   right: 0;
+   margin-top: 38px;
+   margin-right: 10px;
+   margin-left: 10px;
+}
+#custom-navbar.navbar-default .navbar-toggle .icon-bar {
+    background-color: #ffffff;
+}
+#custom-navbar.navbar-default .navbar-toggle:hover .icon-bar,
+#custom-navbar.navbar-default .navbar-toggle:focus .icon-bar {
+    background-color: #004990;
+}
+@media only screen and (min-width: 1000px) {
+  #custom-navbar.navbar-default .navbar-nav>li>a {
+    width: 145px;
+    border-left: 1px solid #0381FB;
+    height: 110px;
+    line-height: 90px;
+    padding: 10px;
+
+  }
+  #custom-navbar.navbar-default .navbar-nav li:last-child {
+    border-right: 1px solid #0381FB;
+  }
+}
+@media only screen and (max-width: 1000px) {
+  #custom-navbar.navbar-default .navbar-nav {
+    display: list-item;
+  }
+}
+
+
+/* ------------------------------------------
+    BODY STYLES
+--------------------------------------------- */
+
+
+/* ------------------------------------------
+    FOOTER STYLES
+--------------------------------------------- */
+
+#custom-footer.navbar-default{
+  color: #ffffff;
+  background-color: #004990;
+  padding: 10px;
+  text-align: center;
+  float: none;
+}
+#custom-footer.navbar-default .navbar-bottom {
+  display: inline-block;
+  text-align: center;
+  float: none;
+}
+#custom-footer.navbar-default .dar-links {
+  display: inline-block;
+  text-align: center;
+  float: none;
+}
+#custom-footer.navbar-default .dar-links>a {
+  color: #ffffff;
+  width: 150px;
+  padding: 15px;
+  font-size: 80%;
+  text-decoration: none;
+  display: inline-block;
+  text-align: center;
+  float: none;
+}
+
+#custom-footer.navbar-default .dar-links>a:hover {
+  color: #ffffff;
+  background-color: #0381FB;
+}
+
+#custom-footer.navbar-default .site-info {
+  padding: 15px;
+  padding-top: 5px;
+  padding-bottom: 0px;
+}
+#custom-footer.navbar-default .site-info>p {
+  font-size: 65%;
+}
+#custom-footer.navbar-default .site-info>p>a {
+  color: #ffffff;
+  text-decoration: underline;
+  }
+#custom-footer.navbar-default .site-info>p>a:hover{
+  color: #002B54;
+}
