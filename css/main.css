@@ -25,15 +25,20 @@ a:hover {
   border: 0px;
   border-radius: 0
 }
+#custom-navbar.container {
+  padding: 0px;
+  margin-left: 5%;
+  margin-right: 5%;
+  width: auto;
+}
 #custom-navbar.navbar-default .navbar-brand {
     color: #ffffff;
     padding: 10px;
     height: auto;
+    padding-left: 15px;
 }
 #custom-navbar.navbar-default .navbar-nav {
-    display: inline-block;
-    text-align: center;
-    float: none;
+    float: right;
 }
 #custom-navbar.navbar-default {
     font-size: 115%;
@@ -48,6 +53,7 @@ a:hover {
 }
 #custom-navbar.navbar-default .navbar-collapse {
   text-align: center;
+  padding: 0;
 }
 #custom-navbar.navbar-default .navbar-toggle{
    position: absolute;
@@ -63,30 +69,68 @@ a:hover {
 #custom-navbar.navbar-default .navbar-toggle:focus .icon-bar {
     background-color: #004990;
 }
-@media only screen and (min-width: 1000px) {
+@media only screen and (min-width: 1110px) {
   #custom-navbar.navbar-default .navbar-nav>li>a {
-    width: 145px;
-    border-left: 1px solid #0381FB;
+    border-left: 1px solid #ffffff;
     height: 110px;
     line-height: 90px;
     padding: 10px;
+    width: 145px;
 
   }
   #custom-navbar.navbar-default .navbar-nav li:last-child {
-    border-right: 1px solid #0381FB;
+    border-right: 1px solid #ffffff;
   }
 }
-@media only screen and (max-width: 1000px) {
+@media only screen and (max-width: 1110px) {
   #custom-navbar.navbar-default .navbar-nav {
-    display: list-item;
+    display: inline-block;
+    float: none;
+    width: 100%;
+  }
+  #custom-navbar.container {
+    padding-left: 0px;
+    padding-right: 0px;
+    margin-left: 0px;
+    margin-right: 0px;
+  }
+  #custom-navbar.navbar-default .navbar-brand {
+    margin-left: 10px;
   }
 }
 
 
 /* ------------------------------------------
-    BODY STYLES
+    PAGE STYLES
 --------------------------------------------- */
-
+#page.body .header{
+  color: #ffffff;
+  background-color: #e2383f;
+  margin-bottom: 20px;
+}
+#page.body .container{
+  margin-left: 5%;
+  margin-right: 5%;
+  width: auto;
+}
+#page.body .header>span>h2{
+  margin-top: 10px;
+}
+@media only screen and (max-width: 1110px) {
+  #page.body .container{
+    margin-left: 10px;
+    margin-right: 10px;
+    width: auto;
+    padding-left: 0px;
+    padding-right: 0px;
+  }
+}
+@media only screen and (max-width: 400px) {
+  #page.body .header>span>h2{
+    font-size: 167%;
+    margin-top: 10px;
+  }
+}
 
 /* ------------------------------------------
     FOOTER STYLES
@@ -111,13 +155,17 @@ a:hover {
 }
 #custom-footer.navbar-default .dar-links>a {
   color: #ffffff;
-  width: 150px;
-  padding: 15px;
-  font-size: 80%;
+  width: 80px;
+  padding: 5px;
+  font-size: 100%;
   text-decoration: none;
   display: inline-block;
   text-align: center;
   float: none;
+  border-left: 1px solid #ffffff;
+}
+#custom-footer.navbar-default .dar-links>a:last-child{
+  border-right: 1px solid #ffffff;
 }
 
 #custom-footer.navbar-default .dar-links>a:hover {
@@ -126,7 +174,6 @@ a:hover {
 }
 
 #custom-footer.navbar-default .site-info {
-  padding: 15px;
   padding-top: 5px;
   padding-bottom: 0px;
 }
