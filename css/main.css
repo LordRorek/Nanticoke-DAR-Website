@@ -17,6 +17,7 @@ a:active,
 a:hover {
   outline: 0;
 }
+html, body { overflow-x: hidden; }
 
 /* ------------------------------------------
     NAVBAR STYLES
@@ -24,7 +25,7 @@ a:hover {
 #custom-navbar.navbar {
   border: 0px;
   border-radius: 0;
-  width:100%;
+  width:auto;
 }
 #custom-navbar.navbar-header {
   width: auto;
@@ -37,8 +38,8 @@ a:hover {
 #custom-navbar.navbar-default .navbar-brand {
     color: #ffffff;
     padding: 10px;
+    padding-left: 16px;;
     height: auto;
-    padding-left: 15px;
 }
 #custom-navbar.navbar-default .navbar-nav {
     float: right;
@@ -91,17 +92,31 @@ a:hover {
   #custom-navbar.navbar-default .navbar-nav {
     display: inline-block;
     float: none;
-    width: 100%;
+    width:auto;
     margin-left: 0;
     margin-right: 0;
   }
   #custom-navbar.container{
-    margin: 0
+    margin: 0;
+    padding: 0px;
   }
   #custom-navbar.navbar-default .navbar-brand {
     margin-left: 10px;
     padding-left: 0px;
     padding-right: 0px;
+  }
+  #custom-navbar.navbar-default .navbar-brand img{
+    padding-left: 16px;
+  }
+}
+@media only screen and (max-width: 768px) {
+  #custom-navbar.navbar-default .navbar-brand {
+    margin-left: 10px;
+    padding-left: 0px;
+    padding-right: 0px;
+  }
+  #custom-navbar.navbar-default .navbar-brand img{
+    padding-left: 16px;
   }
 }
 
@@ -109,31 +124,138 @@ a:hover {
 /* ------------------------------------------
     PAGE STYLES
 --------------------------------------------- */
+#page.body .container{
+  width:auto;
+  margin-bottom: 20px;
+  padding-left: 4.870811615785555%;
+  padding-right: 4.870811615785555%;
+}
 #page.body .header{
   color: #ffffff;
   background-color: #e2383f;
 }
-#page.body .container{
-  margin-left: 5%;
-  margin-right: 5%;
-  width: auto;
-  margin-bottom: 20px;
-
+#page.body .row{
+  padding: 0px;
+  margin: 0px;
 }
-#page.body .header>span>h2{
+#page.body .header>span{
+  padding: 0px;
+}
+#page.body .header>span>h1{
   margin-top: 10px;
+}
+#page.body .article-1{
+  margin-top: 30px;
+  margin-left: 0;
+  margin-right: 0;
+}
+#page.body .article-1 .clearfix .heading-1,
+#page.body .article-1 .clearfix .heading-1>h1{
+  text-align: center;
+}
+#page.body .article-1 .clearfix .heading-2{
+  display: none;
+}
+#page.body .article-1 .clearfix .heading-1,
+#page.body .article-1 .clearfix .heading-2,
+#page.body .article-1 .clearfix .heading-1>h3,
+#page.body .article-1 .clearfix .heading-2>h3,
+#page.body .article-1 .clearfix .article-1-img{
+  margin-top: 0px;
+  padding: 0px;
+}
+#page.body .article-1 .clearfix .img-overlay{
+    float:left;
+    position:relative;
+    padding: 0px;
+}
+#page.body .article-1 .clearfix .img-overlay .description{
+    position:absolute;
+    bottom:0px;
+    left:0px;
+    width:100%;
+    /*styling*/
+    background-color:black;
+    font-family: 'tahoma';
+    font-size:15px;
+    color:white;
+    opacity:0.7;
+    filter:alpha(opacity=60);
+}
+#page.body .article-1 .clearfix .img-overlay .description .description_content{
+    padding:10px;
+    margin:0px;
+    width: auto;
+}
+#page.body .article-1 .clearfix .article-1-text{
+  margin-top: 0px;
+  padding: 0px;
+  padding-left: 20px;
+  text-align: left;
+  float: left;
 }
 @media only screen and (max-width: 1110px) {
   #page.body .container{
     width: auto;
     margin-left: auto;
     margin-right: auto;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+  #page.body .article-1,
+  #page.body .article-1 img{
+    margin-left: auto;
+    margin-right: auto;
+    display: inline-block;
+    text-align: center;
+    float: none;
+  }
+  #page.body .article-1 .clearfix .heading-1{
+    display: none;
+  }
+  #page.body .article-1 .clearfix .heading-2,
+  #page.body .article-1 .clearfix .heading-2>h3{
+    display: block;
+    text-align: center;
+  }
+  #page.body .article-1 .clearfix .article-1-text>p{
+    display: block;
+    margin-top: 0px;
+  }
+  #page.body .article-1 .clearfix .article-1-img,
+  #page.body .article-1 .clearfix .article-1-img>img{
+    padding: 0px;
+    float: left;
   }
 }
-@media only screen and (max-width: 400px) {
-  #page.body .header>span>h2{
+@media only screen and (max-width: 767px) {
+  #page.body .article-1 .clearfix .article-1-text{
+    padding: 0px;
+  }
+  #page.body .article-1 .clearfix .article-1-text p{
+    margin-top: 10px;
+    text-align: left;
+    float: left;
+    padding: 0px;
+  }
+  #page.body .article-1 .clearfix .heading-2,
+  #page.body .article-1 .clearfix .heading-2>h3{
+    display: block;
+    text-align: center;
+  }
+  #page.body .article-1 .clearfix .article-1-img,
+  #page.body .article-1 .clearfix .article-1-img>img{
+    padding: 0px;
+    float: none;
+  }
+}
+@media only screen and (max-width: 450px) {
+  #page.body .header>span>h1{
     font-size: 167%;
-
+  }
+  #page.body .article-1 .clearfix .heading-2,
+  #page.body .article-1 .clearfix .heading-2>h3{
+    font-size: 137%;
   }
 }
 
