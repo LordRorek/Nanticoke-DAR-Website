@@ -120,7 +120,6 @@ html, body { overflow-x: hidden; }
   }
 }
 
-
 /* ------------------------------------------
     PAGE STYLES
 --------------------------------------------- */
@@ -129,6 +128,9 @@ html, body { overflow-x: hidden; }
   margin-bottom: 20px;
   padding-left: 4.870811615785555%;
   padding-right: 4.870811615785555%;
+}
+#page.body .caspio-patriots-db{
+  margin-top: 30px;
 }
 #page.body .header{
   color: #ffffff;
