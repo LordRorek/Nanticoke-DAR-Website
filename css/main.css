@@ -8,347 +8,417 @@ p, blockquote, pre, dl, dt, dd, ol, ul, li, hr,
 fieldset, form, label, legend, th, td,
 article, aside, figure, footer, header, hgroup, menu, nav, section,
 summary, hgroup {
-  margin: 0;
-  padding: 0;
-  border: 0;
+  margin: 0%;
+  padding: 0%;
+  border: 0%;
 }
 
 a:active,
 a:hover {
-  outline: 0;
+    outline: 0%;
 }
-html, body { overflow-x: hidden; }
+
+html,
+body {
+    overflow-x: hidden;
+}
+
 
 /* ------------------------------------------
     NAVBAR STYLES
 --------------------------------------------- */
+
 #custom-navbar.navbar {
-  border: 0px;
-  border-radius: 0;
-  width:auto;
+    border: 0em;
+    border-radius: 0em;
+    width: auto;
+    margin-bottom: 16px;
 }
+
 #custom-navbar.navbar-header {
-  width: auto;
+    width: auto;
 }
+
 #custom-navbar.container {
-  width: auto;
-  margin-left: 3.755%;
-  margin-right: 3.755%;
+    width: 100%;
+    padding-left: 2.597em;
+    padding-right: 2.597em;
 }
+
 #custom-navbar.navbar-default .navbar-brand {
     color: #ffffff;
-    padding: 10px;
-    padding-left: 16px;;
+    margin-top: 0.556em;
+    margin-bottom: 0.556em;
+    margin-left: 0em;
+    padding: 0em;
     height: auto;
 }
+
 #custom-navbar.navbar-default .navbar-nav {
     float: right;
 }
+
 #custom-navbar.navbar-default {
-    font-size: 110%;
+    font-size: 115%;
     background-color: #004990;
 }
+
 #custom-navbar.navbar-default .navbar-nav>li>a {
     color: #ffffff;
     background-color: #004990;
 }
+
 #custom-navbar.navbar-default .navbar-nav>li>a:hover {
     background-color: #0381FB;
 }
+
 #custom-navbar.navbar-default .navbar-collapse {
-  text-align: center;
-  width: auto;
-  padding: 0px;
+    text-align: center;
+    width: auto;
+    padding: 0em;
 }
-#custom-navbar.navbar-default .navbar-toggle{
-   position: absolute;
-   right: 0;
-   padding: 10px;
-   margin-top: 38px;
-   margin-left: 10px;
-   margin-right: 10px;
+
+#custom-navbar.navbar-default .navbar-toggle {
+    position: absolute;
+    right: 0em;
+    padding: 0.556em;
+    margin-right: 0.649em;
+    margin-top: 2.468em;
 }
+
 #custom-navbar.navbar-default .navbar-toggle .icon-bar {
     background-color: #ffffff;
 }
+
 #custom-navbar.navbar-default .navbar-toggle:hover .icon-bar,
 #custom-navbar.navbar-default .navbar-toggle:focus .icon-bar {
     background-color: #004990;
 }
-@media only screen and (min-width: 768px) {
-  #custom-navbar.navbar-default .navbar-nav>li>a {
-    border-left: 1px solid #ffffff;
-    height: 110px;
-    line-height: 90px;
-    padding: 10px;
-    width: 100px;
-  }
-  #custom-navbar.navbar-default .navbar-nav li:last-child {
-    border-right: 1px solid #ffffff;
-  }
-}
+
 @media only screen and (max-width: 1110px) {
-  #custom-navbar.navbar-default .navbar-nav {
-    display: inline-block;
-    float: right;
-    width:auto;
-    margin-left: 0;
-    margin-right: 16px;
-  }
-  #custom-navbar.container{
-    margin: 0;
-    padding: 0px;
-  }
-  #custom-navbar.navbar-default .navbar-brand {
-    margin-left: 16px;
-    padding-left: 0px;
-    padding-right: 0px;
-  }
-}
-@media only screen and (max-width: 767px) {
-  #custom-navbar.navbar-default .navbar-nav {
-    float: none;
-    width: 100%;
-    margin-right: 0px;
-  }
-  #custom-navbar.navbar-default .navbar-nav>li>a {
-    float: none;
-    padding-left: 0px;
-    padding-right: 0px;
-  }
-  #custom-navbar.navbar-default .navbar-nav>li {
-    float: none;
-  }
-  #custom-navbar.navbar-default .navbar-brand {
-    margin-left: 10px;
-    padding-left: 0px;
-    padding-right: 0px;
-  }
-  #custom-navbar.navbar-default .navbar-brand img{
-    padding-left: 16px;
-  }
+    #custom-navbar.navbar-default .navbar-nav {
+        display: inline-block;
+        float: right;
+        width: auto;
+    }
+    #custom-navbar.container {
+        margin: 0em;
+        padding-left: 0.621em;
+        padding-right: 0.621em;
+    }
+    #custom-navbar.navbar-default .navbar-brand {
+        padding-left: 0em;
+        padding-right: 0em;
+    }
 }
 
-/* ------------------------------------------
-    PAGE STYLES
---------------------------------------------- */
-#page.body .container{
-  width:auto;
-  margin-bottom: 20px;
-  padding-left: 4.870811615785555%;
-  padding-right: 4.870811615785555%;
+@media only screen and (min-width: 768px) {
+    #custom-navbar.navbar-default .navbar-nav>li>a {
+        border-left: 0.063em solid #ffffff;
+        height: auto;
+        line-height: 5.625em;
+        padding: 0.649em;
+        width: 6.3em;
+        height: 110px;
+    }
+    #custom-navbar.navbar-default .navbar-nav li:last-child {
+        border-right: 0.063em solid #ffffff;
+    }
 }
-#page.body .patriots-header h4{
-  margin-top: 30px;
-  margin-bottom: 30px;
-}
-#page.body .patriots-header img{
-  margin-top: 30px;
-}
-#page.body .footer-quote{
-  margin-top: 20px;
-  font-style: italic;
-  font-weight:bold;
-}
-#page.body .header{
-  color: #ffffff;
-  background-color: #e2383f;
-}
-#page.body .row{
-  padding: 0px;
-  margin: 0px;
-}
-#page.body .header>span{
-  padding: 0px;
-}
-#page.body .header>span>h1{
-  margin-top: 10px;
-}
-#page.body .article-1{
-  margin-top: 30px;
-  margin-left: 0;
-  margin-right: 0;
-}
-#page.body .article-1 .clearfix .heading-1,
-#page.body .article-1 .clearfix .heading-1>h1{
-  text-align: center;
-}
-#page.body .article-1 .clearfix .heading-2{
-  display: none;
-}
-#page.body .article-1 .clearfix .heading-1,
-#page.body .article-1 .clearfix .heading-2,
-#page.body .article-1 .clearfix .heading-1>h3,
-#page.body .article-1 .clearfix .heading-2>h3,
-#page.body .article-1 .clearfix .article-1-img{
-  margin-top: 0px;
-  padding: 0px;
-}
-#page.body .article-1 .clearfix .img-overlay{
-    float:left;
-    position:relative;
-    padding: 0px;
-}
-#page.body .article-1 .clearfix .img-overlay .description{
-    position:absolute;
-    bottom:0px;
-    left:0px;
-    width:100%;
-    /*styling*/
-    background-color:black;
-    font-family: 'tahoma';
-    font-size:15px;
-    color:white;
-    opacity:0.7;
-    filter:alpha(opacity=60);
-}
-#page.body .article-1 .clearfix .img-overlay .description .description_content{
-    padding:10px;
-    margin:0px;
-    width: auto;
-}
-#page.body .article-1 .clearfix .article-1-text{
-  margin-top: 0px;
-  padding: 0px;
-  padding-left: 20px;
-  text-align: left;
-  float: left;
-}
-@media only screen and (max-width: 1110px) {
-  #page.body .container{
-    width: auto;
-    margin-left: auto;
-    margin-right: auto;
-    padding-left: 10px;
-    padding-right: 10px;
-  }
-  #page.body .article-1,
-  #page.body .article-1 img{
-    margin-left: auto;
-    margin-right: auto;
-    display: inline-block;
-    text-align: center;
-    float: none;
-  }
-  #page.body .article-1 .clearfix .heading-1{
-    display: none;
-  }
-  #page.body .article-1 .clearfix .heading-2,
-  #page.body .article-1 .clearfix .heading-2>h3{
-    display: block;
-    text-align: center;
-  }
-  #page.body .article-1 .clearfix .article-1-text>p{
-    display: block;
-    margin-top: 0px;
-  }
-  #page.body .article-1 .clearfix .article-1-img,
-  #page.body .article-1 .clearfix .article-1-img>img{
-    padding: 0px;
-    float: left;
-  }
-}
+
 @media only screen and (max-width: 767px) {
-  #page.body .article-1 .clearfix .article-1-text{
-    padding: 0px;
-  }
-  #page.body .article-1 .clearfix .article-1-text p{
+    #custom-navbar.navbar-default .navbar-nav {
+        float: none;
+        width: 100%;
+        margin-right: 0em;
+    }
+    #custom-navbar.navbar-default .navbar-nav>li>a {
+        float: none;
+        padding-left: 0em;
+        padding-right: 0em;
+    }
+    #custom-navbar.navbar-default .navbar-nav>li {
+        float: none;
+    }
+    #custom-navbar.navbar-default .navbar-brand {
+        padding-left: 0.833em;
+        padding-right: 0em;
+    }
+}
+
+
+/* ------------------------------------------
+    GENERAL PAGE STYLES
+--------------------------------------------- */
+#page.body .container {
+    width: auto;
+    padding-left: 2.857em;
+    padding-right: 2.857em;
+}
+
+#page.body .header {
+    color: #ffffff;
+    background-color: #e2383f;
+}
+
+#page.body .row {
+    padding: 0%;
+    margin: 0%;
+}
+
+#page.body .header>span {
+    padding: 0%;
+}
+
+#page.body .header>span>h1 {
     margin-top: 10px;
+}
+
+#page.body .main-article {
+    margin-top: 16px;
+    margin-left: 0%;
+    margin-right: 0%;
+}
+
+#page.body .main-article .clearfix .heading-1,
+#page.body .main-article .clearfix .heading-1>h1 {
+    text-align: center;
+}
+
+#page.body .main-article .clearfix .heading-2 {
+    display: none;
+}
+
+#page.body .main-article .clearfix .heading-1,
+#page.body .main-article .clearfix .heading-2,
+#page.body .main-article .clearfix .heading-1>h3,
+#page.body .main-article .clearfix .heading-2>h3,
+#page.body .main-article .clearfix .main-article-img {
+    margin-top: 0%;
+    padding: 0%;
+}
+
+#page.body .img-overlay {
+    float: right;
+    position: relative;
+    padding: 0%;
+    border: 1px solid #000000;
+}
+
+#page.body .img-overlay .description {
+    position: absolute;
+    bottom: 0%;
+    width: 100%;
+    background-color: #000000;
+    font-size: 15px;
+    color: #ffffff;
+    opacity: 0.7;
+    filter: alpha(opacity=60);
+}
+#page.body .img-overlay .description .description_content {
+  margin-top: 0.357em;
+  margin-bottom: 0.357em;
+}
+
+#page.body .main-article .clearfix .img-overlay {
+    float: left;
+}
+
+#page.body .main-article .clearfix .main-article-text {
+    margin-top: 0%;
+    padding: 0%;
+    padding-left: 1.429em;
     text-align: left;
     float: left;
-    padding: 0px;
-  }
-  #page.body .article-1 .clearfix .heading-2,
-  #page.body .article-1 .clearfix .heading-2>h3{
-    display: block;
-    text-align: center;
-  }
-  #page.body .article-1 .clearfix .article-1-img,
-  #page.body .article-1 .clearfix .article-1-img>img{
-    padding: 0px;
-    float: none;
-  }
 }
+
+#page.body .footer-quote {
+    margin-top: 1.143em;
+    margin-bottom: 1.143em;
+    font-style: italic;
+    font-weight: bold;
+}
+#page.body .footer-quote >p{
+  margin-bottom: 0em;
+}
+
+/* PATRIOT PAGE STYLES*/
+#page.body .patriots-header h5 {
+    margin-top: 0.889em;
+    margin-bottom: 0.889em;
+    font-weight: bold;
+}
+
+#page.body .patriots-header img {
+    margin-top: 1.429em;
+}
+/* PATRIOT PAGE STYLES*/
+
+/* JOINING PAGE STYLES*/
+#page.body .joining-vid {
+  margin-top: 1.1em;
+	position: relative;
+	padding-bottom: 28.125%;
+	padding-top: 25px;
+	height: 0;
+}
+#page.body .joining-vid iframe {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+}
+#page.body .joining-article {
+    margin-top: 1.1em;
+    padding-left: 0%;
+}
+#page.body .joining-article>ul {
+    padding-left: 0.938em;
+}
+/* JOINING PAGE STYLES*/
+
+@media only screen and (max-width: 1110px) {
+    #page.body .container {
+        width: auto;
+        padding-left: 0.714em;
+        padding-right: 0.714em;
+    }
+    #page.body .main-article,
+    #page.body .main-article img {
+        margin-left: auto;
+        margin-right: auto;
+        display: inline-block;
+        text-align: center;
+        float: none;
+    }
+    #page.body .main-article .clearfix .heading-1 {
+        display: none;
+    }
+    #page.body .main-article .clearfix .heading-2,
+    #page.body .main-article .clearfix .heading-2>h3 {
+        display: block;
+        text-align: center;
+        margin-bottom: 16px;
+    }
+    #page.body .main-article .clearfix .main-article-text>p {
+        display: block;
+        margin-top: 0%;
+        margin-bottom: 0em;
+    }
+    #page.body .main-article .clearfix .main-article-img,
+    #page.body .main-article .clearfix .main-article-img>img {
+        padding: 0%;
+        float: left;
+    }
+}
+
+@media only screen and (max-width: 767px) {
+    #page.body .joining-vid {
+      padding-bottom: 56.25%;
+    }
+    #page.body .container {
+        width: auto;
+        padding-left: 0.714em;
+        padding-right: 0.714em;
+    }
+    #page.body .main-article .clearfix .main-article-text {
+        padding: 0%;
+    }
+    #page.body .main-article .clearfix .main-article-text p {
+        margin-top: 0.556em;
+        margin-bottom: 0em;
+        text-align: left;
+        float: left;
+        padding: 0%;
+    }
+    #page.body .main-article .clearfix .heading-2,
+    #page.body .main-article .clearfix .heading-2>h3 {
+        display: block;
+        text-align: center;
+    }
+    #page.body .main-article .clearfix .main-article-img,
+    #page.body .main-article .clearfix .main-article-img>img {
+        padding: 0%;
+        float: none;
+    }
+}
+
 @media only screen and (max-width: 450px) {
-  #page.body .header>span>h1{
-    font-size: 167%;
-  }
-  #page.body .article-1 .clearfix .heading-2,
-  #page.body .article-1 .clearfix .heading-2>h3{
-    font-size: 137%;
-  }
+    #page.body .header>span>h1 {
+        font-size: 167%;
+    }
+    #page.body .main-article .clearfix .heading-2,
+    #page.body .main-article .clearfix .heading-2>h3 {
+        font-size: 137%;
+    }
 }
+
 
 /* ------------------------------------------
     FOOTER STYLES
 --------------------------------------------- */
 
-#custom-footer.navbar-default{
-  color: #ffffff;
-  background-color: #004990;
-  padding: 10px;
-  text-align: center;
-  float: none;
+#custom-footer.navbar-default {
+    color: #ffffff;
+    background-color: #004990;
+    padding: 0.714em;
+    text-align: center;
+    float: none;
 }
+
 #custom-footer.navbar-default .navbar-bottom {
-  display: inline-block;
-  text-align: center;
-  float: none;
+    display: inline-block;
+    text-align: center;
+    float: none;
 }
+#custom-footer.container {
+    padding: 0em;
+    width: 100%
+}
+
 #custom-footer.navbar-default .dar-links {
-  display: inline-block;
-  text-align: center;
-  float: none;
+    display: inline-block;
+    text-align: center;
+    float: none;
 }
+
 #custom-footer.navbar-default .dar-links>a {
-  color: #ffffff;
-  width: 80px;
-  padding: 5px;
-  font-size: 100%;
-  text-decoration: none;
-  display: inline-block;
-  text-align: center;
-  float: none;
-  border-left: 1px solid #ffffff;
+    color: #ffffff;
+    width: 80px;
+    padding: 5px;
+    font-size: 100%;
+    text-decoration: none;
+    display: inline-block;
+    text-align: center;
+    float: none;
+    border-left: 1px solid #ffffff;
 }
-#custom-footer.navbar-default .dar-links>a:last-child{
-  border-right: 1px solid #ffffff;
+
+#custom-footer.navbar-default .dar-links>a:last-child {
+    border-right: 1px solid #ffffff;
 }
 
 #custom-footer.navbar-default .dar-links>a:hover {
-  color: #ffffff;
-  background-color: #0381FB;
+    color: #ffffff;
+    background-color: #0381FB;
 }
 
 #custom-footer.navbar-default .site-info {
-  padding-top: 5px;
-  padding-bottom: 0px;
+    padding-top: 5px;
+    padding-bottom: 0%;
 }
+
 #custom-footer.navbar-default .site-info>p {
-  font-size: 65%;
-  margin-bottom: 5px;
+    font-size: 65%;
+    margin-bottom: 5px;
 }
+
 #custom-footer.navbar-default .site-info>p>a {
-  color: #ffffff;
-  text-decoration: underline;
-  }
-#custom-footer.navbar-default .site-info>p>a:hover{
-  color: #002B54;
+    color: #ffffff;
+    text-decoration: underline;
 }
-#page.body .img-overlay{
-    float: none;
-    position:relative;
-    padding: 0px;
-}
-#page.body  .img-overlay .description{
-    position:absolute;
-    bottom:0px;
-    width:100%;
-    /*styling*/
-    background-color:black;
-    font-family: 'tahoma';
-    font-size:15px;
-    color:white;
-    opacity:0.7;
-    filter:alpha(opacity=60);
+
+#custom-footer.navbar-default .site-info>p>a:hover {
+    color: #002B54;
 }
