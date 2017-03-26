@@ -26,3 +26,14 @@ function caspioPatriots() {
     }
   });
 }
+
+function navClose() {
+  $(document).click((event) => {
+    const clickover = $(event.target);
+    const $navbar = $('.navbar-collapse');
+    const _opened = $navbar.hasClass('in');
+    if (_opened === true && !clickover.hasClass('navbar-toggle')) {
+      $navbar.collapse('hide');
+    }
+  });
+}

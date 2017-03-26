@@ -130,6 +130,7 @@ body {
     #custom-navbar.navbar-default .navbar-nav {
         float: none;
         width: 100%;
+        margin-left: 0em;
         margin-right: 0em;
     }
     #custom-navbar.navbar-default .navbar-nav>li>a {
@@ -216,8 +217,8 @@ body {
     filter: alpha(opacity=60);
 }
 #page.body .img-overlay .description .description_content {
-  margin-top: 0.357em;
-  margin-bottom: 0.357em;
+  margin-top: 0.1em;
+  margin-bottom: 0.1em;
 }
 
 #page.body .main-article .clearfix .img-overlay {
