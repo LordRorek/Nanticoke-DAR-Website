@@ -1,6 +1,6 @@
 function caspioPatriots() {
   $(document).ready(() => {
-    $('a:contains(Cloud Database)').parent().css({
+    $('a:contains(Database)').parent().css({
       display: 'none',
     });
     $('td:contains(Records)').parent().parent().css({
